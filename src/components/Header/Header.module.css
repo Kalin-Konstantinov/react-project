@@ -1,0 +1,13 @@
+.ulNav {
+    display: flex;
+    justify-content: center;
+}
+
+.li {
+    list-style: none;
+    margin-right: 10px;
+}
+
+.aItem {
+    text-decoration: none;
+}
