@@ -18,6 +18,9 @@ const Header = () => {
                     <li className={style.li}>
                         <Link to="/login" className={style.aItem}>Login</Link>
                     </li>
+                    <li className={style.li}>
+                        <Link to="/register" className={style.aItem}>Register</Link>
+                    </li>
                 </ul>
             </nav>
         </header>
