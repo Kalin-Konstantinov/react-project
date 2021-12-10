@@ -1,5 +1,5 @@
 import style from './Header.module.css';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
     return (
@@ -14,6 +14,9 @@ const Header = () => {
                     </li>
                     <li className={style.li}>
                         <Link to="/contacts" className={style.aItem}>Contacts</Link>
+                    </li>
+                    <li className={style.li}>
+                        <Link to="/login" className={style.aItem}>Login</Link>
                     </li>
                 </ul>
             </nav>
