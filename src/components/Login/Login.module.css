@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 60vh;
+    height: 80vh;
 }
 
 
@@ -31,10 +31,10 @@
     font-size: 20px;
     border-radius: 10px;
     border: none;
-    box-shadow: 1px 1px 1px 1px black;
+    box-shadow: 2px 2px 2px 0px #607d8b;
+    background-color: #639AAD;
 }
 .submit:hover {
-    background-color: black;
-    color: white;
+    background-color: #DEF7FF;
     cursor: pointer;
 }

@@ -4,16 +4,16 @@ import style from './Login.module.css';
 const Login = () => {
     return (
         <section className={style.loginWrapper}>
-            <form class={style.loginForm}>
-                <label class={style.label} for="email">
+            <form className={style.loginForm}>
+                <label className={style.label} htmlFor="email">
                     Email:
-                    <input type="email" id="email" class={style.inputField} />
+                    <input type="email" id="email" className={style.inputField} />
                 </label>
-                <label class={style.label} for="password">
+                <label className={style.label} htmlFor="password">
                     Password:
-                    <input type="password" id="password" class={style.inputField} />
+                    <input type="password" id="password" className={style.inputField} />
                 </label>
-                <input type="submit" class={style.submit} value="Login" />
+                <input type="submit" className={style.submit} value="Login" />
             </form>
         </section>
     );
