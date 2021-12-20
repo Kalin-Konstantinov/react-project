@@ -4,7 +4,7 @@ const Footer = () => {
     return (
         <footer className={style.footer}>
             <p>
-                &copy; Created by Kalin Konstantiov.
+                &copy; Design by Elena Ivanova.
             </p>
         </footer>
     );
