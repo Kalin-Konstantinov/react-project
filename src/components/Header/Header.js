@@ -1,28 +1,31 @@
-import style from './Header.module.css';
+import styles from './Header.module.css';
 import { Link } from 'react-router-dom';
 
 const Header = () => {
     return (
-        <header>
-            <nav className={style.nav}>
-                <ul className={style.ulNav}>
-                    <li className={style.li}>
-                        <Link to="/" className={style.aItem}>Home</Link>
+        <header className={styles.header}>
+            <nav>
+                <ul className={styles.links}>
+                    <li className={styles.li}>
+                        <Link to="/" className={styles.link}>Home</Link>
                     </li>
-                    <li className={style.li}>
-                        <Link to="/about" className={style.aItem}>About</Link>
+                    <li className={styles.li}>
+                        <Link to="/gallery" className={styles.link}>Gallery</Link>
                     </li>
-                    <li className={style.li}>
-                        <Link to="/contacts" className={style.aItem}>Contacts</Link>
+                    <li className={styles.li}>
+                        <Link to="/share" className={styles.link}>Share recipe</Link>
                     </li>
-                    <li className={style.li}>
-                        <Link to="/login" className={style.aItem}>Login</Link>
-                    </li>
-                    <li className={style.li}>
-                        <Link to="/register" className={style.aItem}>Register</Link>
+                    <li className={styles.li}>
+                        <Link to="/login" className={styles.link}>Login</Link>
                     </li>
                 </ul>
             </nav>
+            <section>
+                <form className={styles.form}>
+                    <input type="text" placeholder="Search" className={styles.search}/>
+                    <button className={styles.button}><i class="fas fa-search"></i></button>
+                </form>
+            </section>
         </header>
     );
 }

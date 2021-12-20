@@ -1,29 +1,62 @@
-.ulNav {
+.header {
+    background-color: rgb(252, 252, 252);
     display: flex;
-    justify-content: center;
-    padding: 10px 0;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    justify-content: space-between;
+
+}
+
+.links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+    margin: 0
 }
 
 .li {
     list-style: none;
-    margin-right: 10px;
-    position: relative;
-    
-}
-
-.aItem {
-    padding: 5px 15px;
-    border-radius: 5px;
-    text-decoration: none;
     font-size: 20px;
-    color: #4A4A4A;
-    position: absolute;
+
 }
 
-.aItem:hover {
-    /* background-color: #DEF7FF; */
+.link {
+    text-decoration: none;
+    color:rgb(104, 104, 104);
+}
+
+.form {
+    display: flex;
+}
+
+
+.search {
+    margin: 0;
+    height: 100%;
+    border: none;
+    background-color:rgb(175, 191, 204);
+    padding: 7px;
+    display: flex;
+    align-items: center;
+}
+
+.search:focus {
+    outline: none;
+}
+
+.search::placeholder {
+    color: rgb(144, 156, 163);
+    font-size: 20px;
+}
+
+.button {
+    border: none;
+    background-color: transparent;
+    font-size: 22px;
+    font-weight: 300;
+}
+
+.button:hover {
     cursor: pointer;
-    /* text-decoration: underline; */
-    font-size: 23px;
-    font-weight: 900;
 }
