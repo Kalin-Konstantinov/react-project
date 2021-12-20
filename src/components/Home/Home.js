@@ -49,6 +49,7 @@ const Home = () => {
 
                 </article>
             </article>
+            <button className={styles.button}>Share recipe</button>
         </section>
     );
 }

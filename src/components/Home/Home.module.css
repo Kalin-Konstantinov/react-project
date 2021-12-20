@@ -89,13 +89,16 @@
     flex: 1;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
-    font-size: 36px;
+    font-size: 24px;
+    color:rgb(121, 121, 121);
+    font-weight: bold;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .goals .p {
     max-width:450px;
+    padding: 20px;
 }
 
 .aboutImg {
@@ -109,4 +112,20 @@
     height: 100%;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
+}
+
+.button {
+    border: none;
+    padding: 10px 40px;
+    background-color: rgb(175, 191, 204);
+    margin-bottom: 30px;
+    color: rgb(103, 109, 112);
+    font-size: 24px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 6px 2px #799eb7;
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: #799eb7;
 }
