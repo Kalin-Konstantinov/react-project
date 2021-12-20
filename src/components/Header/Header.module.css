@@ -23,13 +23,17 @@
 
 .li {
     list-style: none;
-    font-size: 32px;
+    font-size: 28px;
 
 }
 
 .link {
     text-decoration: none;
     color:#799eb7;
+}
+
+.link:hover {
+    text-decoration: underline;
 }
 
 

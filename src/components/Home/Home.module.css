@@ -18,11 +18,15 @@
     object-position: 100% 100%;
 }
 
+.container {
+    width: 80%;
+}
+
 
 .gallery {
-    margin: 50px;
     background-color: rgb(252, 252, 252);
     border-radius: 15px;
+    margin: 40px 0;
 }
 
 .gallery .title {
@@ -30,7 +34,7 @@
     padding: 10px 0;
     font-weight: 600;
     color: rgb(121, 121, 121);
-    font-size: 48px;
+    font-size: 28px;
 }
 
 .cardImg {
@@ -42,7 +46,8 @@
 .cardImg .img {
     width: 100%;
     height: 100%;
-    border-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .cards {
@@ -56,27 +61,27 @@
 
 .card {
     color: rgb(121, 121, 121);
-    font-size: 36px;
     font-weight: tiny;
 
 }
 
 .card:hover {
     cursor: pointer;
-    box-shadow: 1px 1px 16px 8px #ffeb3b3d;
-
+    box-shadow: 1px 1px 16px 8px #799eb785;
+    border-radius: 15px;
 }
 
 .cardTitle {
     text-align: center;
     margin: 0;
+    font-size: 22px;
+
 }
 
 .about {
     display: flex;
     justify-content: center;
-    margin: 50px;
-
+    margin: 30px 0;
 }
 
 .goals {
@@ -84,8 +89,13 @@
     flex: 1;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
-    padding: 10px 80px 30px 80px;
-    font-size: 48px;
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.goals .p {
+    max-width:450px;
 }
 
 .aboutImg {
