@@ -1,0 +1,102 @@
+.body {
+    background-color: rgb(243, 239, 236);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imgWrapper {
+    width: 100%;
+    height: 60vh;
+
+}
+
+.imgWrapper .img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 100% 100%;
+}
+
+
+.gallery {
+    margin: 50px;
+    background-color: rgb(252, 252, 252);
+    border-radius: 15px;
+}
+
+.gallery .title {
+    text-align: center;
+    padding: 10px 0;
+    font-weight: 600;
+    color: rgb(121, 121, 121);
+    font-size: 48px;
+}
+
+.cardImg {
+    max-width: 320px;
+    height: 200px;
+    color: rgb(121, 121, 121);
+}
+
+.cardImg .img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 40px;
+    gap: 30px;
+}
+
+.card {
+    color: rgb(121, 121, 121);
+    font-size: 36px;
+    font-weight: tiny;
+
+}
+
+.card:hover {
+    cursor: pointer;
+    box-shadow: 1px 1px 16px 8px #ffeb3b3d;
+
+}
+
+.cardTitle {
+    text-align: center;
+    margin: 0;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+
+}
+
+.goals {
+    background-color: rgb(214, 205, 200);
+    flex: 1;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    padding: 10px 80px 30px 80px;
+    font-size: 48px;
+}
+
+.aboutImg {
+    flex: 1;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.aboutImg .img {
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}

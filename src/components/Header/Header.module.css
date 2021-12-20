@@ -19,13 +19,13 @@
 
 .li {
     list-style: none;
-    font-size: 20px;
+    font-size: 32px;
 
 }
 
 .link {
     text-decoration: none;
-    color:rgb(104, 104, 104);
+    color:#799eb7;
 }
 
 .form {
@@ -38,9 +38,10 @@
     height: 100%;
     border: none;
     background-color:rgb(175, 191, 204);
-    padding: 7px;
+    padding: 18px;
     display: flex;
     align-items: center;
+    font-size: 24px;
 }
 
 .search:focus {
@@ -49,7 +50,10 @@
 
 .search::placeholder {
     color: rgb(144, 156, 163);
-    font-size: 20px;
+    font-size: 36px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
 }
 
 .button {
