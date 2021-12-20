@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Header = () => {
     return (
         <header className={styles.header}>
-            <nav>
+            <nav className={styles.nav}>
                 <ul className={styles.links}>
                     <li className={styles.li}>
                         <Link to="/" className={styles.link}>Home</Link>
@@ -20,12 +20,7 @@ const Header = () => {
                     </li>
                 </ul>
             </nav>
-            <section>
-                <form className={styles.form}>
-                    <input type="text" placeholder="Search" className={styles.search}/>
-                    <button className={styles.button}><i class="fas fa-search"></i></button>
-                </form>
-            </section>
+           
         </header>
     );
 }
