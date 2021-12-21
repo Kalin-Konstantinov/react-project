@@ -32,7 +32,8 @@
     color:#799eb7;
 }
 
-.link:hover {
+.link:hover,
+.link:focus {
     text-decoration: underline;
 }
 
