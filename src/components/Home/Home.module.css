@@ -27,6 +27,8 @@
     background-color: rgb(252, 252, 252);
     border-radius: 15px;
     margin: 40px 0;
+    box-shadow: 0px 0px 6px 1px #0000001c;
+
 }
 
 .gallery .title {
@@ -38,7 +40,6 @@
 }
 
 .cardImg {
-    max-width: 320px;
     height: 200px;
     color: rgb(121, 121, 121);
 }
@@ -62,7 +63,7 @@
 .card {
     color: rgb(121, 121, 121);
     font-weight: tiny;
-
+    flex-basis: 1;
 }
 
 .card:hover {
@@ -82,6 +83,8 @@
     display: flex;
     justify-content: center;
     margin: 30px 0;
+    box-shadow: 0px 0px 6px 1px #0000001c;
+    border-radius: 15px;
 }
 
 .goals {
@@ -90,14 +93,15 @@
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
     font-size: 24px;
-    color:rgb(121, 121, 121);
+    color: rgb(121, 121, 121);
     font-weight: bold;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .goals .p {
-    max-width:450px;
+    max-width: 450px;
     padding: 20px;
 }
 
