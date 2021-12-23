@@ -8,7 +8,7 @@ import style from './Login.module.css';
 
 const Login = () => {
     const navigate = useNavigate();
-    const { user, saveUserData } = useAuthContext();
+    const { saveUserData } = useAuthContext();
 
     const onLoginhandler = (e) => {
         e.preventDefault();
@@ -16,13 +16,24 @@ const Login = () => {
         const formData = new FormData(e.target);
         const email = formData.get('email');
         const password = formData.get('password');
-        console.log(email, password);
+
+        if (password.length < 5) {
+            return alert('Your password should be at least 5 characters.');
+        }
+
+        if (email === '') {
+            return alert('Please enter your email address.');
+        }
+        e.target.reset();
 
         loginUser({ email, password })
             .then(res => {
                 const { _id, name, email } = res;
                 saveUserData({ _id, name, email });
                 navigate('/');
+            })
+            .catch(err => {
+                return alert('handle error ', err);
             })
     }
 
