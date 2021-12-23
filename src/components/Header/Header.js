@@ -17,9 +17,14 @@ const Header = () => {
         user
     }) => {
         return (
+            <>
+            <li className={styles.li}>
+                <Link to="/logout" className={styles.link}>Logout</Link>
+            </li>
             <li className={styles.li}>
                 <Link to="/my-recipes" className={styles.link}>Welcome, {user?.name}!</Link>
             </li>
+            </>
         );
     }
 
