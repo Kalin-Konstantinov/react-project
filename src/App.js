@@ -7,6 +7,7 @@ import Footer from './components/Footer/Footer';
 import './App.css';
 import { AuthContextProvider } from './contexts/AuthContext';
 import Logout from './components/Logout/Logout';
+import CreateRecipe from './components/CreateRecipe/CreateRecipe';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
             <Route path='/logout' element={<Logout />} />
             <Route path='/login' element={<Login />} />
             <Route path='/register' element={<Register />} />
+            <Route path='/create' element={<CreateRecipe />} />
           </Routes>
           <Footer />
         </div>

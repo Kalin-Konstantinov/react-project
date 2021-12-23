@@ -11,13 +11,13 @@ const Header = () => {
         return (
             <>
                 <li className={styles.li}>
-                    <Link to="/share" className={styles.link}>Share recipe</Link>
-                </li>
-                <li className={styles.li}>
-                    <Link to="/logout" className={styles.link}>Logout</Link>
+                    <Link to="/create" className={styles.link}>Share recipe</Link>
                 </li>
                 <li className={styles.li}>
                     <Link to="/my-recipes" className={styles.link}>Welcome, {user?.name}!</Link>
+                </li>
+                <li className={styles.li}>
+                    <Link to="/logout" className={styles.link}>Logout</Link>
                 </li>
             </>
         );

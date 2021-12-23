@@ -1,9 +1,9 @@
 import { Link, useNavigate } from 'react-router-dom';
 import { useAuthContext } from '../../contexts/AuthContext';
 import { registerUser } from '../../services/authService';
-import style from './Register.module.css';
+import style from './CreateRecipe.module.css';
 
-const Register = () => {
+const CreateRecipe = () => {
 
     const navigate = useNavigate();
     const { user, saveUserData } = useAuthContext();
@@ -48,13 +48,13 @@ const Register = () => {
     return (
         <section className={style.registerWrapper}>
             <section className={style.register}>
-                <h2 className={style.title}>Register</h2>
+                <h2 className={style.title}>Create recipe</h2>
                 <form className={style.registerForm} onSubmit={onRegisterHandler}>
-                    <input type="text" name="name" id="name" className={style.inputField} placeholder="Name" />
-                    <input type="email" id="email" name="email" className={style.inputField} placeholder="Email" />
-                    <input type="password" id="password" name="password" className={style.inputField} placeholder="Password" />
-                    <input type="password" id="rePass" name="rePass" className={style.inputField} placeholder="Confirm password" />
-                    <input type="submit" className={style.submit} value="Register" />
+                    <input type="text" name="title" id="name" className={style.inputField} placeholder="Title" />
+                    <textarea name="products" className={style.textarea} placeholder="Add products..." />
+                    <textarea  name="description" className={style.textarea} placeholder="Preparation of the recipe: description..." />
+                    <select name="type" className={style.dropdown} value="type" ><option value="sallad">sallad</option></select>
+                    <input type="submit" className={style.submit} value="Share recipe" />
                 </form>
                 <h3 className={style.question}>You already have account?</h3>
                 <p className={style.login}>You can login <Link className={style.link} to='/login'>Here</Link></p>
@@ -63,4 +63,4 @@ const Register = () => {
     );
 }
 
-export default Register;
+export default CreateRecipe;
