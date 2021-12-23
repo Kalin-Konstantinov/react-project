@@ -1,22 +1,29 @@
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+
+
+import { useAuthContext } from '../../contexts/AuthContext';
 import { loginUser } from '../../services/authService';
 import style from './Login.module.css';
 
 
 const Login = () => {
+    const navigate = useNavigate();
+    const { user, saveUserData } = useAuthContext();
 
     const onLoginhandler = (e) => {
         e.preventDefault();
 
-        const formData =  new FormData(e.target);
+        const formData = new FormData(e.target);
         const email = formData.get('email');
         const password = formData.get('password');
         console.log(email, password);
 
-        loginUser({email, password})
-        .then(res => {
-            console.log(res);
-        })
+        loginUser({ email, password })
+            .then(res => {
+                const { _id, name, email } = res;
+                saveUserData({ _id, name, email });
+                navigate('/');
+            })
     }
 
     return (
