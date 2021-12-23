@@ -5,6 +5,24 @@ import { useAuthContext } from '../../contexts/AuthContext';
 const Header = () => {
     const { user } = useAuthContext();
 
+    const LoggedInUser = ({
+        user
+    }) => {
+        return (
+            <>
+                <li className={styles.li}>
+                    <Link to="/share" className={styles.link}>Share recipe</Link>
+                </li>
+                <li className={styles.li}>
+                    <Link to="/logout" className={styles.link}>Logout</Link>
+                </li>
+                <li className={styles.li}>
+                    <Link to="/my-recipes" className={styles.link}>Welcome, {user?.name}!</Link>
+                </li>
+            </>
+        );
+    }
+
     const Guest = () => {
         return (
             <li className={styles.li}>
@@ -12,22 +30,6 @@ const Header = () => {
             </li>
         );
     }
-
-    const LoggedInUser = ({
-        user
-    }) => {
-        return (
-            <>
-            <li className={styles.li}>
-                <Link to="/logout" className={styles.link}>Logout</Link>
-            </li>
-            <li className={styles.li}>
-                <Link to="/my-recipes" className={styles.link}>Welcome, {user?.name}!</Link>
-            </li>
-            </>
-        );
-    }
-
 
     return (
         <header className={styles.header}>
@@ -39,14 +41,10 @@ const Header = () => {
                     <li className={styles.li}>
                         <Link to="/gallery" className={styles.link}>Gallery</Link>
                     </li>
-                    <li className={styles.li}>
-                        <Link to="/share" className={styles.link}>Share recipe</Link>
-                    </li>
                     {user.name
-                        ? <LoggedInUser user={user}/>
+                        ? <LoggedInUser user={user} />
                         : <Guest />
                     }
-
                 </ul>
             </nav>
 
