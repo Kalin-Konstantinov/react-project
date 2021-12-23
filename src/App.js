@@ -6,6 +6,7 @@ import Register from './components/Register/Register';
 import Footer from './components/Footer/Footer';
 import './App.css';
 import { AuthContextProvider } from './contexts/AuthContext';
+import Logout from './components/Logout/Logout';
 
 function App() {
   return (
@@ -14,7 +15,8 @@ function App() {
         <div className="App">
           <Header />
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path='/' element={<Home />} />
+            <Route path='/logout' element={<Logout />} />
             <Route path='/login' element={<Login />} />
             <Route path='/register' element={<Register />} />
           </Routes>
