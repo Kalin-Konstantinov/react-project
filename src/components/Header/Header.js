@@ -41,6 +41,9 @@ const Header = () => {
                     <li className={styles.li}>
                         <Link to="/gallery" className={styles.link}>Gallery</Link>
                     </li>
+                    <li className={styles.li}>
+                        <Link to="/add-category" className={styles.link}>Add category</Link>
+                    </li>
                     {user.name
                         ? <LoggedInUser user={user} />
                         : <Guest />

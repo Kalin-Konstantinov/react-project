@@ -1,0 +1,34 @@
+.add-category {
+    background-image: url(../../public/images/main-backgound.jpg);
+    min-height: 95vh;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+    padding-top: 100px;
+}
+
+.add-category-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.add-category-name {
+    height: 30px;
+}
+
+.add-category-image {
+    height: 30px;
+}
+
+.add-category-button {
+    padding: 10px 30px;
+    font-size: 18px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+}
