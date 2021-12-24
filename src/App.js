@@ -8,6 +8,7 @@ import './App.css';
 import { AuthContextProvider } from './contexts/AuthContext';
 import Logout from './components/Logout/Logout';
 import CreateRecipe from './components/CreateRecipe/CreateRecipe';
+import Gallery from './components/Galerry/Gallery';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
             <Route path='/login' element={<Login />} />
             <Route path='/register' element={<Register />} />
             <Route path='/create' element={<CreateRecipe />} />
+            <Route path='/gallery' element={<Gallery />} />
           </Routes>
           <Footer />
         </div>

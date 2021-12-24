@@ -1,0 +1,28 @@
+.gallery-main {
+    background-color: rgb(243, 239, 236);
+    min-height: 95vh;
+}
+
+.gallery-main h1 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    padding-top: 40px;
+}
+
+.gallert-categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px 120px;
+    justify-content:space-around;
+    padding: 50px 70px 20px 70px;
+    margin: 50px;
+    background-color: rgb(214, 205, 200);
+    border-radius: 15px;
+}
+
+.gallery-categories-card  h3{
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+}
