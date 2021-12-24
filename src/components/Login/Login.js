@@ -28,8 +28,8 @@ const Login = () => {
 
         loginUser({ email, password })
             .then(res => {
-                const { _id, name, email } = res;
-                saveUserData({ _id, name, email });
+                const { _id, name, email, accessToken } = res;
+                saveUserData({ _id, name, email, accessToken });
                 navigate('/');
             })
             .catch(err => {
