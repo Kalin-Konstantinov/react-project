@@ -1,0 +1,9 @@
+.gallery-categories-card  h3{
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.gallery-categories-card-img img {
+    width: 100%;
+}
