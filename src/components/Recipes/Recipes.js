@@ -2,6 +2,7 @@ import { useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react'
 import { getRecipesByCategory } from '../../services/recipesService';
 import RecipeCard from '../Parts/RecipeCard/RecipeCard';
+import './Recipes.css';
 
 
 const Recipes = () => {
@@ -17,8 +18,10 @@ const Recipes = () => {
 
     return (
         <section className="recipes">
-            <h1>Recipe {category}</h1>
-            {recipes.map(x => <RecipeCard recipe={x} key={x._id}/>)}
+            <h1 className="recipes-title">Recipe {category}</h1>
+            <section className="recipes-container">
+                {recipes.map(x => <RecipeCard recipe={x} key={x._id} />)}
+            </section>
         </section>
     );
 }
