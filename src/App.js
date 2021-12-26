@@ -10,6 +10,7 @@ import CreateRecipe from './components/CreateRecipe/CreateRecipe';
 import Gallery from './components/Galerry/Gallery';
 import AddCategory from './components/AddCategory/AddCategory';
 import Login from './components/Login/Login';
+import Recipes from './components/Recipes/Recipes';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
             <Route path='/register' element={<Register />} />
             <Route path='/create' element={<CreateRecipe />} />
             <Route path='/gallery' element={<Gallery />} />
+            <Route path='/gallery/recipes/:category' element={<Recipes />} />
             <Route path='/add-category' element={<AddCategory />} />
           </Routes>
           <Footer />
