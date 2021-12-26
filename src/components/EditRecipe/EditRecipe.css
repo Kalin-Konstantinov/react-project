@@ -1,0 +1,94 @@
+.edit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+    background-image: url(../../public/images/back-ground-forms.jpg);
+    background-repeat: no-repeat;
+    color: rgb(82, 82, 82);
+}
+
+
+.edit-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-color: rgb(214, 205, 200);
+    padding: 0px 50px;
+    border-radius: 25px;
+    margin-left: 400px;
+}
+.edit-title {
+    font-weight: 600;
+    font-size: 32px;
+}
+
+.edit-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.edit-form-textarea {
+    width: 300px;
+    height: 100px;
+}
+
+.edit-form-dropdown {
+    width: 150px;
+    height: 50px;
+    font-size: 24px;
+}
+
+.edit-form-input { 
+    min-width: 300px;
+    min-height: 50px;
+    font-size: 20px;
+    border-radius: 15px;
+    border: 1px solid gray;
+    padding-left: 20px;
+}
+
+.edit-form-input::placeholder {
+    padding-left: 0px;
+}
+
+.edit-form-submit {
+    min-width: 150px;
+    min-height: 40px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(175, 191, 204);
+    border: none;
+}
+.edit-form-submit:hover {
+    background-color: #DEF7FF;
+    cursor: pointer;
+}
+
+
+/* .question {
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    font-size: 26px;
+}
+
+.login {
+    margin: 0;
+    padding: 0 0 50px 0;
+}
+
+.link {
+    font-weight: bold;
+    font-size: 24px;
+    text-decoration: none;
+    color: rgb(82, 82, 82);
+}
+
+.link:hover {
+    text-decoration: underline;
+} */

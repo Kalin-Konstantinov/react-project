@@ -12,6 +12,7 @@ import AddCategory from './components/AddCategory/AddCategory';
 import Login from './components/Login/Login';
 import Recipes from './components/Recipes/Recipes';
 import RecipeDetails from './components/RecipeDetails/RecipeDetails';
+import EditRecipe from './components/EditRecipe/EditRecipe';
 
 function App() {
   return (
@@ -29,6 +30,8 @@ function App() {
             <Route path='/gallery/recipes/:category' element={<Recipes />} />
             <Route path='/add-category' element={<AddCategory />} />
             <Route path='/:recipeCategory/recipe/details/:recipeId' element={<RecipeDetails />} />
+            <Route path='/:recipeCategory/recipe/edit/:recipeId' element={<EditRecipe />} />
+            <Route path='/:recipeCategory/recipe/delete/:recipeId' element={<RecipeDetails />} />
           </Routes>
           <Footer />
         </div>
