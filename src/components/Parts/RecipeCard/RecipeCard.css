@@ -1,0 +1,22 @@
+.recipe-card {
+    max-width: 300px;
+}
+
+.recipe-card-img {
+    max-width: 300px;
+
+}
+
+.recipe-card-img img {
+    width: 100%;
+}
+
+.recipe-card-title {
+    text-transform: capitalize;
+    text-align: center;
+    margin: 10px;
+}
+
+.recipe-card-owner-name {
+    text-align: right;
+}
