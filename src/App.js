@@ -13,6 +13,7 @@ import Login from './components/Login/Login';
 import Recipes from './components/Recipes/Recipes';
 import RecipeDetails from './components/RecipeDetails/RecipeDetails';
 import EditRecipe from './components/EditRecipe/EditRecipe';
+import DeleteRecipe from './components/DeleteRecipe/DeleteRecipe';
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
             <Route path='/:recipeCategory/recipe/details/:recipeId' element={<RecipeDetails />} />
             <Route path='/:recipeCategory/recipe/edit/:recipeId' element={<EditRecipe />} />
             <Route path='/:recipeCategory/recipe/delete/:recipeId' element={<RecipeDetails />} />
+            <Route path='/recipe/delete/:recipeId' element={<DeleteRecipe />} />
           </Routes>
           <Footer />
         </div>

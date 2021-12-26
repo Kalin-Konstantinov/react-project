@@ -17,7 +17,6 @@ const RecipeDetails = () => {
     useEffect(() => {
         getRecipeById(recipeId)
             .then(x => {
-                console.log(x);
                 setRecipe(x)
             })
     }, [recipeId])
@@ -27,8 +26,8 @@ const RecipeDetails = () => {
     }) => {
         return (
             <article className="recipe-details-author-buttons">
-                <Link to={`/${recipe.category}/recipe/edit/${recipe._id}`}>Edit</Link>
-                <Link to='/recipe/edit' className="recipe-details-author-button-delete">Delete</Link>
+                <Link to={`/${recipe.category}/recipe/edit/${recipe._id}`} className="recipe-details-author-button-edit">Edit</Link>
+                <Link to={`/recipe/delete/${recipe._id}`} className="recipe-details-author-button-delete">Delete</Link>
             </article>
         );
     }
@@ -47,8 +46,8 @@ const RecipeDetails = () => {
                 <h4>Recipe preparation:</h4>
                 <p>{recipe.description}</p>
             </article>
-            { user._id === recipe.ownerId?._id && <OwnerButtons recipe={recipe}/>}
-            
+            {user._id === recipe.ownerId?._id && <OwnerButtons recipe={recipe} />}
+
             <article className="recipe-details-author">
                 <Link to='/Author'>Ceated by: {recipe.ownerId?.name}</Link>
             </article>
