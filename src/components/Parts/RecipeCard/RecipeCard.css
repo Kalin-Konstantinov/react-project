@@ -1,14 +1,17 @@
 .recipe-card {
-    max-width: 300px;
+    max-width: 320px;
 }
 
 .recipe-card-img {
-    max-width: 300px;
+    width: 100%;
+    height: 250px;
 
 }
 
 .recipe-card-img img {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .recipe-card-title {
@@ -19,4 +22,9 @@
 
 .recipe-card-owner-name {
     text-align: right;
+}
+
+.recipes-title {
+    text-align: center;
+    margin: 20px;
 }
