@@ -14,6 +14,7 @@ import Recipes from './components/Recipes/Recipes';
 import RecipeDetails from './components/RecipeDetails/RecipeDetails';
 import EditRecipe from './components/EditRecipe/EditRecipe';
 import DeleteRecipe from './components/DeleteRecipe/DeleteRecipe';
+import MyRecipes from './components/MyRecipes/MyRecipes';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Header />
           <Routes>
             <Route path='/' element={<Home />} />
+            <Route path='/my-recipes' element={<MyRecipes />} />
             <Route path='/logout' element={<Logout />} />
             <Route path='/login' element={<Login />} />
             <Route path='/register' element={<Register />} />

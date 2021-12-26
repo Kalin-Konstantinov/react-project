@@ -3,7 +3,20 @@ const AUTHORIZATION_HEADER = 'x-authorization';
 const CONTENT_TYPE = 'Content-Type';
 const CONTENT_VALUE = 'application/json';
 
-export const get = (path) => fetch(BASE_URL + path).then(res => res.json());
+export const get = (path, token) => {
+    if (token) {
+        return fetch(BASE_URL + path, {
+            method: 'GET',
+            headers: {
+                [CONTENT_TYPE]: CONTENT_VALUE,
+                [AUTHORIZATION_HEADER]: token,
+            },
+        })
+            .then(res => res.json())
+    }
+    return fetch(BASE_URL + path)
+        .then(res => res.json());
+}
 
 export const post = (path, data, token) => {
     if (token) {
@@ -15,7 +28,7 @@ export const post = (path, data, token) => {
             },
             body: JSON.stringify(data),
         })
-        .then(res => res.json())
+            .then(res => res.json())
     }
     if (!data) {
         return fetch(BASE_URL + path, {
@@ -25,7 +38,7 @@ export const post = (path, data, token) => {
                 [AUTHORIZATION_HEADER]: token,
             },
         })
-        .then(res => res.json())
+            .then(res => res.json())
     }
     return fetch(BASE_URL + path, {
         method: 'POST',
@@ -34,7 +47,7 @@ export const post = (path, data, token) => {
         },
         body: JSON.stringify(data),
     })
-    .then(res => res.json())
+        .then(res => res.json())
 }
 
 export const put = (path, data, token) => {
@@ -46,7 +59,7 @@ export const put = (path, data, token) => {
         },
         body: JSON.stringify(data),
     })
-    .then(res => res.json())
+        .then(res => res.json())
 
 }
 

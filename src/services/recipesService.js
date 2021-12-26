@@ -11,3 +11,5 @@ export const getRecipeById = (recipeId) => request.get(`/recipes/one/${recipeId}
 export const deleteRecipeById = (recipeId, userToken) => request.del(`/recipes/one/${recipeId}`, userToken);
 
 export const updateRecipe = (recipeId, recipeData, userToken) => request.put(`/recipes/one/${recipeId}`, recipeData, userToken);
+
+export const getMyRecpies = (userId, userToken) => request.get(`/recipes/user/${userId}`, userToken);
