@@ -33,8 +33,12 @@ const RecipeDetails = () => {
                 <h4>Recipe preparation:</h4>
                 <p>{recipe.description}</p>
             </article>
+            <article className="recipe-details-author-buttons">
+                <Link to='/recipe/edit' className="recipe-details-author-button-edit">Edit</Link>
+                <Link to='/recipe/edit' className="recipe-details-author-button-delete">Delete</Link>
+            </article>
             <article className="recipe-details-author">
-                <Link to='/Author'>{recipe.ownerId?.name}</Link>
+                <Link to='/Author'>Ceated by: {recipe.ownerId?.name}</Link>
             </article>
         </section>
     );
