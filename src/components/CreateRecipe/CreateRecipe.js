@@ -1,12 +1,22 @@
 import { useNavigate } from 'react-router-dom';
+import { useState, useEffect } from 'react';
+
 import { useAuthContext } from '../../contexts/AuthContext';
 import { createRecepe } from '../../services/recipesService';
+import {getAllCategorys} from '../../services/catalogService'
 import style from './CreateRecipe.module.css';
 
 const CreateRecipe = () => {
-
+    const [categories, setCategories] = useState([]);
     const navigate = useNavigate();
     const { user } = useAuthContext();
+
+    useEffect(() => {
+        getAllCategorys()
+        .then(x => {
+            setCategories(x)
+        })
+    }, [])
 
     const onRegisterHandler = (e) => {
         e.preventDefault();
@@ -31,11 +41,8 @@ const CreateRecipe = () => {
         }
         createRecepe(recipeData, user.accessToken)
             .then(res => {
-                console.log(res);
-                navigate('/');
+                navigate(`/gallery/recipes/${res.response.category}`);
             })
-
-
     }
 
     return (
@@ -48,10 +55,7 @@ const CreateRecipe = () => {
                     <textarea name="products" className={style.textarea} placeholder="Add products..." />
                     <textarea name="description" className={style.textarea} placeholder="Preparation of the recipe: description..." />
                     <select name="category" className={style.dropdown}  >
-                        <option value="sallad">sallad</option>
-                        <option value="dessert">dessert</option>
-                        <option value="wine">wine</option>
-                        <option value="soup">soup</option>
+                        {categories.map(x => <option value={x.name} key={x._id}>{x.name}</option>)}
                     </select>
                     <input type="submit" className={style.submit} value="Share recipe" />
                 </form>
