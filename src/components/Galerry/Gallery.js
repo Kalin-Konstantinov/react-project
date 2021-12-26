@@ -11,8 +11,6 @@ const Gallery = () => {
     useEffect(() => {
         getAllCategorys()
             .then(x => {
-                console.log('here');
-                console.log(x);
                 setCategories(x);
             })
 

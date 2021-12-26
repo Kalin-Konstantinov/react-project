@@ -7,7 +7,6 @@ const CreateRecipe = () => {
 
     const navigate = useNavigate();
     const { user } = useAuthContext();
-    console.log(user);
 
     const onRegisterHandler = (e) => {
         e.preventDefault();
