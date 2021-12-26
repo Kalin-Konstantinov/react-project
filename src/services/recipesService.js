@@ -7,3 +7,5 @@ export const getRecipesByCategory = (categoryName) => request.get(`/recipes/${ca
 
 
 export const getRecipeById = (recipeId) => request.get(`/recipes/one/${recipeId}`);
+
+export const updateRecipe = (recipeId, recipeData, userToken) => request.put(`/recipes/one/${recipeId}`, recipeData, userToken);

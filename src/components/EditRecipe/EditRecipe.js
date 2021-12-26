@@ -2,7 +2,7 @@ import { useNavigate, useParams } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 
 import { useAuthContext } from '../../contexts/AuthContext';
-import { createRecepe } from '../../services/recipesService';
+import { updateRecipe } from '../../services/recipesService';
 import { getAllCategorys } from '../../services/catalogService';
 import { getRecipeById } from '../../services/recipesService';
 import './EditRecipe.css';
@@ -18,7 +18,7 @@ const EditRecipe = () => {
     useEffect(() => {
         getRecipeById(recipeId)
             .then(recipe => setRecipe(recipe))
-    }, [])
+    }, [recipeId])
 
     useEffect(() => {
         getAllCategorys()
@@ -48,10 +48,11 @@ const EditRecipe = () => {
             imageUrl,
             category,
         }
-        createRecepe(recipeData, user.accessToken)
+        updateRecipe(recipeId, recipeData, user.accessToken)
             .then(res => {
-                navigate(`/gallery/recipes/${res.response.category}`);
+                navigate(`/gallery/recipes/${res.category}`);
             })
+            .catch(err => console.log(err))
     }
 
     return (
