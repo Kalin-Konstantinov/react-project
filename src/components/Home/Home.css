@@ -1,24 +1,24 @@
-.body {
+.home {
     background-color: rgb(243, 239, 236);
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.imgWrapper {
+.home-image-wrapper {
     width: 100%;
     height: 60vh;
 
 }
 
-.imgWrapper .img {
+.home-image-wrapper img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: 0% 100%;
 }
 
-.container {
+.content-container {
     width: 80%;
 }
 
@@ -31,55 +31,22 @@
 
 }
 
-.gallery .title {
+.gallery-title {
     text-align: center;
     padding: 10px 0;
     font-weight: 600;
     color: rgb(121, 121, 121);
     font-size: 28px;
 }
-
-.cardImg {
-    height: 200px;
-    color: rgb(121, 121, 121);
-}
-
-.cardImg .img {
-    width: 100%;
-    height: 100%;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
-
-.cards {
+.gallery-container {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-evenly;
-    padding: 40px;
-    gap: 30px;
+    justify-content: space-around;
+    padding: 50px;
+    background-color: var(--secondary-background-color)
 }
 
-.card {
-    color: rgb(121, 121, 121);
-    font-weight: tiny;
-    flex-basis: 1;
-}
-
-.card:hover {
-    cursor: pointer;
-    box-shadow: 1px 1px 16px 8px #799eb785;
-    border-radius: 15px;
-}
-
-.cardTitle {
-    text-align: center;
-    margin: 0;
-    font-size: 22px;
-
-}
-
-.about {
+.home-about {
     display: flex;
     justify-content: center;
     margin: 30px 0;
@@ -87,7 +54,7 @@
     border-radius: 15px;
 }
 
-.goals {
+.home-goals {
     background-color: rgb(214, 205, 200);
     flex: 1;
     border-top-left-radius: 15px;
@@ -100,25 +67,25 @@
     align-items: center;
 }
 
-.goals .p {
+.home-goals p {
     max-width: 450px;
     padding: 20px;
 }
 
-.aboutImg {
+.home-about-img {
     flex: 1;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
 }
 
-.aboutImg .img {
+.home-about-img img {
     width: 100%;
     height: 100%;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
 }
 
-.button {
+.home-button-share-recipe {
     border: none;
     padding: 10px 40px;
     background-color: rgb(175, 191, 204);
@@ -129,7 +96,7 @@
     box-shadow: 1px 1px 6px 2px #799eb7;
 }
 
-.button:hover {
+.home-button-share-recipe:hover {
     cursor: pointer;
     background-color: #799eb7;
 }

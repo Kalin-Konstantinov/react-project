@@ -1,55 +1,46 @@
-import styles from './Home.module.css';
+import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+
+import { getAllCategorys } from '../../services/catalogService';
+import CategoryCard from '../Parts/CategoryCard/CategoryCard';
+
+import './Home.css';
 
 const Home = () => {
+    const [cagegories, setCategories] = useState([]);
+
+    useEffect(() => {
+        getAllCategorys()
+            .then(x => {
+                x.length = 4;
+                setCategories(x);
+            })
+    }, [])
+
     return (
-        <section className={styles.body}>
-            <article className={styles.imgWrapper}>
-                <img src="/images/home-resize.png" className={styles.img} alt="food" />
+        <section className="home">
+            <article className="home-image-wrapper">
+                <img src="/images/home-resize.png"  alt="food" />
             </article>
-            <article className={styles.container}>
-                <article className={styles.gallery}>
-                    <h2 className={styles.title}>Recipes Gallery</h2>
-                    <article className={styles.galleryContainer}>
-                        <section className={styles.cards}>
-                            <article className={styles.card}>
-                                <article className={styles.cardImg}>
-                                    <img src="/images/soup.jpeg" alt="soup" className={styles.img} />
-                                </article>
-                                <h4 className={styles.cardTitle}>Soup</h4>
-                            </article>
-                            <article className={styles.card}>
-                                <article className={styles.cardImg}>
-                                    <img src="/images/sallad.jpeg" alt="soup" className={styles.img} />
-                                </article>
-                                <h4 className={styles.cardTitle}>Sallad</h4>
-                            </article>
-                            <article className={styles.card}>
-                                <article className={styles.cardImg}>
-                                    <img src="/images/dessert.jpeg" alt="soup" className={styles.img} />
-                                </article>
-                                <h4 className={styles.cardTitle}>Dessert</h4>
-                            </article>
-                            <article className={styles.card}>
-                                <article className={styles.cardImg}>
-                                    <img src="/images/smoothie.jpeg" alt="soup" className={styles.img} />
-                                </article>
-                                <h4 className={styles.cardTitle}>Smoothie</h4>
-                            </article>
-                        </section>
+            <article className="content-container">
+                <article className="gallery">
+                    <h2 className="gallery-title">Recipes Gallery</h2>
+                    <article className="gallery-container">
+                        {cagegories.map(x => <CategoryCard category={x} key={x._id} />)}
                     </article>
                 </article>
 
-                <article className={styles.about}>
-                    <article className={styles.goals}>
-                        <p className={styles.p}>We alway strive to develop and share our experience. Share your experience with us! Create your own recipe and make the day happy for more people.</p>
+                {/* <article className="home-about">
+                    <article className="home-golas">
+                        <p >We alway strive to develop and share our experience. Share your experience with us! Create your own recipe and make the day happy for more people.</p>
                     </article>
-                    <article className={styles.aboutImg}>
-                        <img src="/images/kitchen.jpeg" alt="kitchen" className={styles.img} />
+                    <article className="home-about-img">
+                        <img src="/images/kitchen.jpeg" alt="kitchen"  />
                     </article>
 
-                </article>
+                </article> */}
             </article>
-            <button className={styles.button}>Share recipe</button>
+            <Link to="/gallery" className="home-button-share-recipe">Show more</Link>
         </section>
     );
 }

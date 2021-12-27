@@ -6,6 +6,7 @@
     border-radius: 15px ;
     overflow: hidden;
     box-shadow: 1px 1px 12px 6px #adada9;
+    max-width: 300px;
 }
 
 
