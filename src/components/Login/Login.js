@@ -2,7 +2,7 @@ import { Link, useNavigate } from 'react-router-dom';
 
 import { useAuthContext } from '../../contexts/AuthContext';
 import { loginUser } from '../../services/authService';
-import style from './Login.module.css';
+import './Login.css';
 
 
 const Login = () => {
@@ -37,16 +37,16 @@ const Login = () => {
     }
 
     return (
-        <section className={style.loginWrapper}>
-            <section className={style.login}>
-                <h2 className={style.title}>Login</h2>
-                <form className={style.loginForm} onSubmit={onLoginhandler}>
-                    <input type="email" id="email" name="email" className={style.inputField} placeholder="Email" />
-                    <input type="password" id="password" name="password" className={style.inputField} placeholder="Password" />
-                    <input type="submit" className={style.submit} value="Sign up" />
+        <section className="login-wrapper">
+            <section className="login">
+                <h2 className="login-title">Login</h2>
+                <form className="login-form"onSubmit={onLoginhandler}>
+                    <input type="email" id="email" name="email" className="login-input" placeholder="Email" />
+                    <input type="password" id="password" name="password" className="login-input" placeholder="Password" />
+                    <input type="submit" className="login-submit" value="Sign up" />
                 </form>
-                <h3 className={style.question}>You don't have account?</h3>
-                <p className={style.register}>You can register <Link className={style.link} to='/register'>Here</Link></p>
+                <h3 className="login-question">You don't have account?</h3>
+                <p className="login-to-register-wrapper">You can register <Link className="login-to-register-link" to='/register'>Here</Link></p>
             </section>
         </section>
     );

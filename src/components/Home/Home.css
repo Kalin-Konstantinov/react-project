@@ -35,7 +35,6 @@
     text-align: center;
     padding: 10px 0;
     font-weight: 600;
-    color: rgb(121, 121, 121);
     font-size: 28px;
 }
 .gallery-container {
@@ -90,7 +89,6 @@
     padding: 10px 40px;
     background-color: rgb(175, 191, 204);
     margin-bottom: 30px;
-    color: rgb(103, 109, 112);
     font-size: 24px;
     border-radius: 15px;
     box-shadow: 1px 1px 6px 2px #799eb7;
