@@ -1,7 +1,7 @@
 import { Link, useNavigate } from 'react-router-dom';
 import { useAuthContext } from '../../contexts/AuthContext';
 import { registerUser } from '../../services/authService';
-import style from './Register.module.css';
+import './Register.css';
 
 const Register = () => {
 
@@ -46,18 +46,18 @@ const Register = () => {
     }
 
     return (
-        <section className={style.registerWrapper}>
-            <section className={style.register}>
-                <h2 className={style.title}>Register</h2>
-                <form className={style.registerForm} onSubmit={onRegisterHandler}>
-                    <input type="text" name="name" id="name" className={style.inputField} placeholder="Name" />
-                    <input type="email" id="email" name="email" className={style.inputField} placeholder="Email" />
-                    <input type="password" id="password" name="password" className={style.inputField} placeholder="Password" />
-                    <input type="password" id="rePass" name="rePass" className={style.inputField} placeholder="Confirm password" />
-                    <input type="submit" className={style.submit} value="Register" />
+        <section className="register-wrapper">
+            <section className="register">
+                <h2 className="register-title">Register</h2>
+                <form className="register-form" onSubmit={onRegisterHandler}>
+                    <input type="text" name="name" id="name" className="register-form-input" placeholder="Name" />
+                    <input type="email" id="email" name="email" className="register-form-input" placeholder="Email" />
+                    <input type="password" id="password" name="password" className="register-form-input" placeholder="Password" />
+                    <input type="password" id="rePass" name="rePass" className="register-form-input" placeholder="Confirm password" />
+                    <input type="submit" className="register-form-submit" value="Register" />
                 </form>
-                <h3 className={style.question}>You already have account?</h3>
-                <p className={style.login}>You can login <Link className={style.link} to='/login'>Here</Link></p>
+                <h3 className="register-to-login-question">You already have account?</h3>
+                <p className="login-link-wrapper">You can login <Link className="login-link" to='/login'>Here</Link></p>
             </section>
         </section>
     );

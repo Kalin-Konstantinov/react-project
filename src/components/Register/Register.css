@@ -1,11 +1,10 @@
-.registerWrapper {
+.register-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 85vh;
-    background-image: url('./login.jpg');
+    height: 95vh;
+    background-image: var(--main-background-image);
     background-repeat: no-repeat;
-    color: rgb(82, 82, 82);
 }
 
 
@@ -13,18 +12,18 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 30px;
     background-color: rgb(214, 205, 200);
-    padding: 0px 50px;
+    padding: 20px 50px;
     border-radius: 25px;
     margin-left: 400px;
 }
-.title {
+.register-title {
     font-weight: 600;
     font-size: 32px;
 }
 
-.registerForm {
+.register-form {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -33,7 +32,7 @@
 
 
 
-.inputField { 
+.register-form-input { 
     min-width: 300px;
     min-height: 50px;
     font-size: 20px;
@@ -42,38 +41,38 @@
     padding-left: 20px;
 }
 
-.inputField::placeholder {
+.register-form-input::placeholder {
     padding-left: 0px;
 }
 
-.submit {
+.register-form-submit {
     min-width: 150px;
     min-height: 40px;
     font-size: 20px;
     border-radius: 10px;
     border: none;
-    background-color: rgb(175, 191, 204);
+    background-color: var(--button-background-color);
     border: none;
 }
-.submit:hover {
-    background-color: #DEF7FF;
+.register-form-submit:hover {
+    background-color: var(--button-background-color-hover);
     cursor: pointer;
 }
 
 
-.question {
+.register-to-login-question {
     margin: 0;
     padding: 0;
     font-weight: 600;
     font-size: 26px;
 }
 
-.login {
+.login-link-wrapper {
     margin: 0;
     padding: 0 0 50px 0;
 }
 
-.link {
+.login-link {
     font-weight: bold;
     font-size: 24px;
     text-decoration: none;
@@ -81,6 +80,6 @@
     text-transform: uppercase;
 }
 
-.link:hover {
+.login-link:hover {
     text-decoration: underline;
 }
