@@ -2,18 +2,18 @@
     background-color: rgb(252, 252, 252);
     display: flex;
     align-items: center;
-    padding: 0;
-    margin: 0;
     justify-content: space-between;
     position: sticky;
     top: 0px;
+    padding: 5px;
+    margin: 0;
     
 }
-.nav {
+.header-nav {
     margin: 0 auto;
 }
 
-.links {
+.header-nav-links {
     display: flex;
     flex-wrap: wrap;
     gap: 80px;
@@ -21,27 +21,22 @@
     justify-content: center;
 }
 
-.li {
+.header-nav-li {
     list-style: none;
     font-size: 28px;
 
 }
 
-.link {
+.header-nav-link {
     text-decoration: none;
-    color:#799eb7;
+    color:var(--secondary-color);
 }
 
-.link:hover,
-.link:focus {
+.header-nav-link:hover,
+.header-nav-link:focus {
     text-decoration: underline;
 }
 
-.button {
-    border: none;
-    padding: 10px 30px;
-    background-color: #799eb7;
-}
 
 
 
