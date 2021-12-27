@@ -19,4 +19,6 @@
     background-color: var(--secondary-background-color);
     padding: 50px;
     border-radius: 15px;
+    width: 80%;
+    min-height: 70vh;
 }
