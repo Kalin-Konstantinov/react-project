@@ -17,6 +17,14 @@ const Register = () => {
         const password = formData.get('password');
         const rePass = formData.get('rePass');
 
+        if (name.length < 3) {
+            return alert('Your name should be at least 3 characters.');
+        }
+
+        if (email === '') {
+            return alert('Please enter your email address.');
+        }
+
         if (password.length < 5) {
             return alert('Your password should be at least 5 characters.');
         }
@@ -25,13 +33,6 @@ const Register = () => {
             return alert('Your password and repeat password do not match.');
         }
 
-        if (name.length < 3) {
-            return alert('Your name should be at least 3 characters.');
-        }
-
-        if (email === '') {
-            return alert('Please enter your email address.');
-        }
         e.target.reset();
 
         registerUser({ name, email, password })
