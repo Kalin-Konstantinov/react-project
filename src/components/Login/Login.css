@@ -1,6 +1,6 @@
 .login-wrapper {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     height: 95vh;
     background-image: var(--main-background-image);
@@ -16,7 +16,7 @@
     background-color: var(--secondary-background-color);
     padding: 30px 50px;
     border-radius: 25px;
-    margin-left: 400px;
+    margin-right: 320px;
 }
 .login-title {
     font-weight: 600;
