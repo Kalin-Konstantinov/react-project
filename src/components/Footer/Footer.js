@@ -1,8 +1,8 @@
-import style from './Footer.module.css';
+import './Footer.css';
 
 const Footer = () => {
     return (
-        <footer className={style.footer}>
+        <footer className="footer">
             <p>
                 &copy; Design by Elena Ivanova.
             </p>
