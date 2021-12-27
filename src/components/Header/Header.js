@@ -14,7 +14,7 @@ const Header = () => {
                     <Link to="/create" className="header-nav-link">Share recipe</Link>
                 </li>
                 <li className="header-nav-li">
-                    <Link to="/my-recipes" className="header-nav-link">Welcome, {user?.name}!</Link>
+                    <Link to="/my-recipes" className="header-nav-link">{user?.name}'s recipes</Link>
                 </li>
                 <li className="header-nav-li">
                     <Link to="/logout" className="header-nav-link">Logout</Link>
