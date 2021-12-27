@@ -20,7 +20,10 @@ const MyRecipes = () => {
 
     return (
         <section className="my-recipes">
-            {myRecipes.map(x => <RecipeCard recipe={x} key={x._id}/>)}
+            <h2 className="my-recipes-title">My Recipes</h2>
+            <article class="my-recipes-container">
+                {myRecipes.map(x => <RecipeCard recipe={x} key={x._id} />)}
+            </article>
         </section>
     );
 }

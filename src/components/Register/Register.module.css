@@ -77,7 +77,8 @@
     font-weight: bold;
     font-size: 24px;
     text-decoration: none;
-    color: rgb(82, 82, 82);
+    color: var(--secondary-color);
+    text-transform: uppercase;
 }
 
 .link:hover {

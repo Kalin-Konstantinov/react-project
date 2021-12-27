@@ -1,5 +1,27 @@
 .my-recipes {
     display: flex;
-    flex-wrap: wrap;
-    justify-content:space-around;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    min-height: 95vh;
+    background-color: var(--main-background-color);
+    
 }
+
+.my-recipes-title {
+    margin: 50px;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.my-recipes-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+    background-color: var(--secondary-background-color);
+    padding: 50px;
+    margin: 50px;
+    border-radius: 15px;
+}
+
