@@ -31,6 +31,14 @@ const Header = () => {
         );
     }
 
+    const AdminPanel = () => {
+        return (
+            <li className={styles.li}>
+                <Link to="/add-category" className={styles.link}>Add category</Link>
+            </li>
+        );
+    }
+
     return (
         <header className={styles.header}>
             <nav className={styles.nav}>
@@ -41,9 +49,7 @@ const Header = () => {
                     <li className={styles.li}>
                         <Link to="/gallery" className={styles.link}>Gallery</Link>
                     </li>
-                    <li className={styles.li}>
-                        <Link to="/add-category" className={styles.link}>Add category</Link>
-                    </li>
+                    {user.name === 'admin' && <AdminPanel />}
                     {user.name
                         ? <LoggedInUser user={user} />
                         : <Guest />

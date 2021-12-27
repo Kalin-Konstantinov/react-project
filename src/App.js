@@ -31,7 +31,7 @@ function App() {
             <Route path='/create' element={<CreateRecipe />} />
             <Route path='/gallery' element={<Gallery />} />
             <Route path='/gallery/recipes/:category' element={<Recipes />} />
-            <Route path='/add-category' element={<AddCategory />} />
+            <Route path='/add-category' element={< AddCategory />} />
             <Route path='/:recipeCategory/recipe/details/:recipeId' element={<RecipeDetails />} />
             <Route path='/:recipeCategory/recipe/edit/:recipeId' element={<EditRecipe />} />
             <Route path='/:recipeCategory/recipe/delete/:recipeId' element={<RecipeDetails />} />
