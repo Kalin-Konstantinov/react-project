@@ -1,11 +1,11 @@
 .gallery-categories-card:hover{
-    box-shadow: 1px 1px 12px 6px #e5e6d3;
+    box-shadow: var(--card-box-shadow-hover);
 }
 
 .gallery-categories-card {
     border-radius: 15px ;
     overflow: hidden;
-    box-shadow: 1px 1px 12px 6px #adada9;
+    box-shadow: var(--card-box-shadow);
     max-width: 300px;
 }
 

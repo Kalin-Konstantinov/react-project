@@ -1,5 +1,13 @@
 .recipe-card {
     max-width: 320px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: var(--card-box-shadow);
+    max-width: 350px;
+}
+
+.recipe-card:hover {
+    box-shadow: var(--card-box-shadow-hover);
 }
 
 .recipe-card-img {
@@ -22,6 +30,8 @@
 
 .recipe-card-owner-name {
     text-align: right;
+    margin-right: 10px;
+    margin-bottom: 10px;
 }
 
 .recipes-title {

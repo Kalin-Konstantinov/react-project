@@ -14,6 +14,8 @@
   --button-background-color: rgb(175, 191, 204);
   --button-background-color-hover: #DEF7FF;
   --main-background-image: url(./public/images/main-backgound.jpg);
+  --card-box-shadow: 1px 1px 12px 6px #adada9;
+  --card-box-shadow-hover: 1px 1px 12px 6px #e5e6d3;
 }
 
 body {
