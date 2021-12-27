@@ -28,15 +28,23 @@
     border-radius: 15px;
     margin: 40px 0;
     box-shadow: 0px 0px 6px 1px #0000001c;
+    overflow: hidden;
 
 }
 
 .gallery-title {
+    display: block;
+    margin: 10px auto;
     text-align: center;
     padding: 10px 0;
     font-weight: 600;
     font-size: 28px;
 }
+
+.gallery-title:hover{
+    text-decoration: underline;
+}
+
 .gallery-container {
     display: flex;
     flex-wrap: wrap;
@@ -45,7 +53,7 @@
     background-color: var(--secondary-background-color)
 }
 
-.home-about {
+/* .home-about {
     display: flex;
     justify-content: center;
     margin: 30px 0;
@@ -82,7 +90,7 @@
     height: 100%;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
-}
+} */
 
 .home-button-share-recipe {
     border: none;

@@ -24,7 +24,7 @@ const Home = () => {
             </article>
             <article className="content-container">
                 <article className="gallery">
-                    <h2 className="gallery-title">Recipes Gallery</h2>
+                    <Link to="/gallery" className="gallery-title">Recipes Gallery</Link>
                     <article className="gallery-container">
                         {cagegories.map(x => <CategoryCard category={x} key={x._id} />)}
                     </article>
