@@ -1,6 +1,6 @@
 .register-wrapper {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     height: 95vh;
     background-image: var(--main-background-image);
@@ -16,7 +16,7 @@
     background-color: rgb(214, 205, 200);
     padding: 20px 50px;
     border-radius: 25px;
-    margin-left: 400px;
+    margin-right: 320px;
 }
 .register-title {
     font-weight: 600;
