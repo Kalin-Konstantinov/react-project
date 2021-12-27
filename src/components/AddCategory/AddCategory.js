@@ -1,4 +1,4 @@
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Navigate } from 'react-router-dom';
 import { useAuthContext } from '../../contexts/AuthContext';
 import { postCategory } from '../../services/catalogService';
 import './AddCategory.css';
@@ -6,6 +6,9 @@ import './AddCategory.css';
 const AddCategory = () => {
     const { user } = useAuthContext();
     const navigate = useNavigate();
+    if(user.name !== 'admin') {
+        return <Navigate to="/"/>
+    }
 
     const onSubmitCategory = (e) => {
         e.preventDefault();
