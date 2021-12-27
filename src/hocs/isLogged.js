@@ -10,7 +10,7 @@ export const isLogged = (Component) => {
 
         return user.accessToken
             ? <Component {...props} />
-            : <Navigate />
+            : <Navigate to="/login"/>
     }
 
     return WrapperComponent;
