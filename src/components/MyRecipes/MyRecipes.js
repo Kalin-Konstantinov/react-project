@@ -22,7 +22,10 @@ const MyRecipes = () => {
         <section className="my-recipes">
             <h2 className="my-recipes-title">My Recipes</h2>
             <article className="my-recipes-container">
-                {myRecipes.map(x => <RecipeCard recipe={x} key={x._id} />)}
+                {myRecipes.length > 0 
+                ? myRecipes.map(x => <RecipeCard recipe={x} key={x._id} />)
+                : "You don't have any recipes yet."
+            }
             </article>
         </section>
     );
