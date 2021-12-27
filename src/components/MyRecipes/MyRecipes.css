@@ -17,11 +17,14 @@
 .my-recipes-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
     gap: 30px;
     background-color: var(--secondary-background-color);
     padding: 50px;
     margin: 50px;
     border-radius: 15px;
+    width: 80%;
+    min-height: 70vh;
 }
 
