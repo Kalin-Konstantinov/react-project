@@ -1,6 +1,22 @@
+.recipes {
+    background-color: var(--main-background-color);
+    min-height: 95vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.recipes-title {
+    padding: 50px;
+}
+
 .recipes-container {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
+    background-color: var(--secondary-background-color);
+    padding: 50px;
+    border-radius: 15px;
 }
