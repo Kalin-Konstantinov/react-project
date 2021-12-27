@@ -25,9 +25,14 @@ const Header = () => {
 
     const Guest = () => {
         return (
+            <>
             <li className="header-nav-li">
                 <Link to="/login" className="header-nav-link">Login</Link>
             </li>
+            <li className="header-nav-li">
+                <Link to="/register" className="header-nav-link">Register</Link>
+            </li>
+            </>
         );
     }
 
