@@ -38,7 +38,7 @@ const EditRecipe = () => {
         const category = formData.get('category');
 
         if (title === '' || category === '' || description === '' || imageUrl === '' || products === '') {
-            return alert('Please pleace fill all fields');
+            return alert('Please, fill all fields!');
         }
         e.target.reset();
         const recipeData = {
@@ -50,9 +50,12 @@ const EditRecipe = () => {
         }
         updateRecipe(recipeId, recipeData, user.accessToken)
             .then(res => {
+                if(res.err) {
+                    throw res;
+                }
                 navigate(`/gallery/recipes/${res.category}`);
             })
-            .catch(err => console.log(err))
+            .catch(err => alert(err.message));
     }
 
     return (
