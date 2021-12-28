@@ -50,7 +50,7 @@ const RecipeDetails = () => {
                 {user._id === recipe.ownerId?._id && <OwnerButtons recipe={recipe} />}
 
                 <article className="recipe-details-author">
-                    <Link to='/Author'>Ceated by: {recipe.ownerId?.name}</Link>
+                    <Link to='/Author'>Created by: {recipe.ownerId?.name}</Link>
                 </article>
             </section>
         </section>

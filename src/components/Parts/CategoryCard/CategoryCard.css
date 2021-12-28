@@ -6,7 +6,7 @@
     border-radius: 15px ;
     overflow: hidden;
     box-shadow: var(--card-box-shadow);
-    max-width: 300px;
+    max-width: 250px;
 }
 
 

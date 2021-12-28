@@ -1,3 +1,5 @@
-# Share Recipe
+# Share Recipes :joy:
 
-This is application where people can share their recipes for cooking and also reserach for new ones.
+This is an application where people can share their cooking recipes and also search for new ones.
+
+The application allows you to read other people's recipes and create, edit, delete, read your own recipes.
