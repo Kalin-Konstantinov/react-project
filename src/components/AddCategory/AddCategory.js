@@ -1,4 +1,4 @@
-import { useNavigate, Navigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { useAuthContext } from '../../contexts/AuthContext';
 import { isAdmin } from '../../hocs/isAdmin';
 import { postCategory } from '../../services/catalogService';

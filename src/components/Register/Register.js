@@ -6,7 +6,7 @@ import './Register.css';
 const Register = () => {
 
     const navigate = useNavigate();
-    const { user, saveUserData } = useAuthContext();
+    const { saveUserData } = useAuthContext();
 
     const onRegisterHandler = (e) => {
         e.preventDefault();

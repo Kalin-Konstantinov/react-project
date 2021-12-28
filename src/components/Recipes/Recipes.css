@@ -7,18 +7,20 @@
 }
 
 .recipes-title {
-    padding: 50px;
+    font-size: 40px;
+    font-weight: 600;
 }
 
 .recipes-container {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     background-color: var(--secondary-background-color);
     padding: 50px;
     border-radius: 15px;
     width: 80%;
     min-height: 70vh;
+    margin: 50px;
 }
