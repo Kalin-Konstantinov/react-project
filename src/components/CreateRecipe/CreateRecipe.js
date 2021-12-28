@@ -5,6 +5,7 @@ import { useAuthContext } from '../../contexts/AuthContext';
 import { createRecepe } from '../../services/recipesService';
 import {getAllCategorys} from '../../services/catalogService'
 import  './CreateRecipe.css';
+import { isLogged } from '../../hocs/isLogged';
 
 const CreateRecipe = () => {
     const [categories, setCategories] = useState([]);
@@ -64,4 +65,4 @@ const CreateRecipe = () => {
     );
 }
 
-export default CreateRecipe;
+export default isLogged(CreateRecipe);
