@@ -6,7 +6,7 @@ The application allows you to read other people's recipes and create, edit, dele
 
 ### Dependencies
 
-This is a front-end application that depends on the back-end API, whose documentation can be found --> [HERE](https://github.com/Kalin-Konstantinov/server.git).
+This is a front-end application that depends on the back-end API, the documentation can be found --> [HERE](https://github.com/Kalin-Konstantinov/server.git).
 
 ### Start the application
 
@@ -14,18 +14,21 @@ To start the application, you can use the start script by typing ***npm start***
 
 ### Guest users
 
-Guests have access to basic functionality. 
-They have access to opne home page, gallery page, every category of recipes and recipe details. They cannot create, edit, delete recipes.
+Guests have access to basic functionality.
+They have access to the home page, gallery page, each category of recipes and recipe details. The guests cannot create, edit, delete recipes.
 
-### Logged in users
+### Logged-in users
 
-Logged in users can read all information on site and can create, edit, delete their own recipes. They cannot edit or delete resipes of another users. They cannot add specific categories on the site.
+Users logged in can read all the information on the site and can create, edit, delete their own recipes. They cannot edit or delete recipes of other users. They cannot add specific categories to the site.
 
 ### Admin
 
-Admin can add categories to the site. And all functionality as logged in user.
+The administrator can add categories to the site. He has the access of the whole functionality of the site, also to delete or edit other`s recipe.
 
 ### Used technologies
 
+    -javascript
     -React
     -React router dom
+    -HTML
+    -CSS
