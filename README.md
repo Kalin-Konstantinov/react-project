@@ -8,6 +8,14 @@ The application allows you to read other people's recipes and create, edit, dele
 
 This is a front-end application that depends on the back-end API, the documentation can be found --> [HERE](https://github.com/Kalin-Konstantinov/server.git).
 
+### Used technologies
+
+    -javascript
+    -React
+    -React router dom
+    -HTML
+    -CSS
+
 ### Start the application
 
 To start the application, you can use the start script by typing ***npm start*** in the project console.
@@ -24,11 +32,3 @@ Users logged in can read all the information on the site and can create, edit, d
 ### Admin
 
 The administrator can add categories to the site. He has the access of the whole functionality of the site, also to delete or edit other`s recipe.
-
-### Used technologies
-
-    -javascript
-    -React
-    -React router dom
-    -HTML
-    -CSS
