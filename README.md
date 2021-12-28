@@ -27,7 +27,5 @@ Admin can add categories to the site. And all functionality as logged in user.
 
 ### Used technologies
 
-To build this site I have used:
-
--React
--React router dom
+    -React
+    -React router dom
