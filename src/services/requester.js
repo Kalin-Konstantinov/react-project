@@ -39,6 +39,7 @@ export const post = (path, data, token) => {
             },
         })
             .then(res => res.json())
+            .catch(res => console.log(res))
     }
     return fetch(BASE_URL + path, {
         method: 'POST',
@@ -48,6 +49,7 @@ export const post = (path, data, token) => {
         body: JSON.stringify(data),
     })
         .then(res => res.json())
+
 }
 
 export const put = (path, data, token) => {

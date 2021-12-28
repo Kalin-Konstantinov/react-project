@@ -37,12 +37,16 @@ const Register = () => {
 
         registerUser({ name, email, password })
             .then(res => {
+                // console.log(res);
+                if(res.err) {
+                    throw res
+                }
                 const { _id, name, email, accessToken } = res;
                 saveUserData({ _id, name, email, accessToken });
                 navigate('/');
             })
             .catch(err => {
-                return alert('handle error ', err);
+                return alert(err.message);
             })
     }
 
