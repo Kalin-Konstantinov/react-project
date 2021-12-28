@@ -11,3 +11,23 @@ This is a front-end application that depends on the back-end API, whose document
 ### Start the application
 
 To start the application, you can use the start script by typing ***npm start*** in the project console.
+
+### Guest users
+
+Guests have access to basic functionality. 
+They have access to opne home page, gallery page, every category of recipes and recipe details. They cannot create, edit, delete recipes.
+
+### Logged in users
+
+Logged in users can read all information on site and can create, edit, delete their own recipes. They cannot edit or delete resipes of another users. They cannot add specific categories on the site.
+
+### Admin
+
+Admin can add categories to the site. And all functionality as logged in user.
+
+### Used technologies
+
+To build this site I have used:
+
+-React
+-React router dom
