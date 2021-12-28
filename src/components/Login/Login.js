@@ -41,8 +41,8 @@ const Login = () => {
             <section className="login">
                 <h2 className="login-title">Login</h2>
                 <form className="login-form"onSubmit={onLoginhandler}>
-                    <input type="email" id="email" name="email" className="login-input" placeholder="Email" />
-                    <input type="password" id="password" name="password" className="login-input" placeholder="Password" />
+                    <input type="email" id="email" name="email" className="login-input" placeholder="Email" autoComplete="off" />
+                    <input type="password" id="password" name="password" className="login-input" placeholder="Password" autoComplete="off" />
                     <input type="submit" className="login-submit" value="Sign up" />
                 </form>
                 <h3 className="login-question">You don't have account?</h3>
