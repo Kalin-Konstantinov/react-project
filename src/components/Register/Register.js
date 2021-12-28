@@ -37,7 +37,6 @@ const Register = () => {
 
         registerUser({ name, email, password })
             .then(res => {
-                // console.log(res);
                 if(res.err) {
                     throw res
                 }
