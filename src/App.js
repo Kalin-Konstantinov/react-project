@@ -15,6 +15,7 @@ import RecipeDetails from './components/RecipeDetails/RecipeDetails';
 import EditRecipe from './components/EditRecipe/EditRecipe';
 import DeleteRecipe from './components/DeleteRecipe/DeleteRecipe';
 import MyRecipes from './components/MyRecipes/MyRecipes';
+import NotFound  from './components/NotFound/NotFound';
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
             <Route path='/:recipeCategory/recipe/edit/:recipeId' element={<EditRecipe />} />
             <Route path='/:recipeCategory/recipe/delete/:recipeId' element={<RecipeDetails />} />
             <Route path='/recipe/delete/:recipeId' element={<DeleteRecipe />} />
+            <Route path='*' element={<NotFound />} />
           </Routes>
           <Footer />
         </div>

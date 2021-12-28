@@ -1,0 +1,9 @@
+.not-found {
+    min-height: 88vh;
+    background-color: var(--main-background-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
