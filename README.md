@@ -6,4 +6,4 @@ The application allows you to read other people's recipes and create, edit, dele
 
 ### dependencies
 
-This is an front-end application that depends on back-end API which documentation can be found here --> `https://github.com/Kalin-Konstantinov/server.git` 
+This is an front-end application that depends on back-end API which documentation can be found here --> https://github.com/Kalin-Konstantinov/server.git
