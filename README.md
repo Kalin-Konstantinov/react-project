@@ -1,4 +1,4 @@
-# Share Recipes :joy:
+# Share Recipes :recipe:
 
 This is an application where people can share their cooking recipes and also search for new ones.
 
