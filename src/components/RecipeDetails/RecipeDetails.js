@@ -47,7 +47,7 @@ const RecipeDetails = () => {
                     <h4>Recipe preparation:</h4>
                     <p>{recipe.description}</p>
                 </article>
-                {user._id === recipe.ownerId?._id && <OwnerButtons recipe={recipe} />}
+                {(user._id === recipe.ownerId?._id || user.name === 'admin') && <OwnerButtons recipe={recipe} />}
 
                 <article className="recipe-details-author">
                     <Link to='/Author'>Created by: {recipe.ownerId?.name}</Link>
