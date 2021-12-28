@@ -4,7 +4,6 @@ import './RecipeCard.css';
 const RecipeCard = ({
     recipe
 }) => {
-    console.log(recipe);
     return (
         <section className="recipe-card">
             <Link to={`/${recipe.category}/recipe/details/${recipe._id}`}>

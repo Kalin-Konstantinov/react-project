@@ -18,7 +18,6 @@ const AddCategory = () => {
         if (name === '' || imageUrl === '') {
             return alert('Please fill all fields.')
         }
-        console.log(name, imageUrl);
         postCategory({ name, imageUrl }, user.accessToken)
             .then(res => {
                 navigate('/gallery')
