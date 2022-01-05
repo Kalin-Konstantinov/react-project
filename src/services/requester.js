@@ -1,5 +1,5 @@
-// const BASE_URL = 'http://localhost:5000';
-const BASE_URL = 'https://my-share-recipes.herokuapp.com';
+const BASE_URL = 'http://localhost:5000';
+// const BASE_URL = 'https://my-share-recipes.herokuapp.com';
 const AUTHORIZATION_HEADER = 'x-authorization';
 const CONTENT_TYPE = 'Content-Type';
 const CONTENT_VALUE = 'application/json';
