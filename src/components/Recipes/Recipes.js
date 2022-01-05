@@ -1,6 +1,6 @@
 import { useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react'
-import { getRecipesByCategory } from '../../services/recipesService';
+import { getRecipesByCategory } from '../../services/catalogService';
 import RecipeCard from '../Parts/RecipeCard/RecipeCard';
 import './Recipes.css';
 
