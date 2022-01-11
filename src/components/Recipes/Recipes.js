@@ -18,7 +18,7 @@ const Recipes = () => {
 
     return (
         <section className="recipes">
-            <h1 className="recipes-title">Recipe {category}</h1>
+            <h1 className="recipes-title">{category} recipes</h1>
             <section className="recipes-container">
                 {recipes.length > 0
                     ? recipes.map(x => <RecipeCard recipe={x} key={x._id} />)
