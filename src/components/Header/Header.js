@@ -3,9 +3,10 @@ import { useState } from 'react';
 import './Header.css';
 import { Link } from 'react-router-dom';
 import { useAuthContext } from '../../contexts/AuthContext';
+import MobileMenu from './MobileMenu/MobileMenu';
 
 const Header = () => {
-    const [haburgerMenu, setHamburgerMenu] = useState('');
+    const [haburgerMenu, setHamburgerMenu] = useState('close');
     const { user } = useAuthContext();
 
     const LoggedInUser = ({
@@ -48,10 +49,10 @@ const Header = () => {
     }
 
     const handleHaburgerMenu = () => {
-        if(haburgerMenu === '') {
+        if (haburgerMenu === 'close') {
             setHamburgerMenu('open')
         } else {
-            setHamburgerMenu('')
+            setHamburgerMenu('close')
         }
     }
 
@@ -83,6 +84,15 @@ const Header = () => {
                 </ul>
             </nav>
             <HamburgerMenu />
+            <MobileMenu
+                user={user}
+                display={
+                    haburgerMenu === 'close'
+                    ? 'hide'
+                    : ''
+                }
+                handleHaburgerMenu={handleHaburgerMenu}
+            />
         </header>
     );
 }
