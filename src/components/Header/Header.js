@@ -1,8 +1,11 @@
-import  './Header.css';
+import { useState } from 'react';
+
+import './Header.css';
 import { Link } from 'react-router-dom';
 import { useAuthContext } from '../../contexts/AuthContext';
 
 const Header = () => {
+    const [haburgerMenu, setHamburgerMenu] = useState('');
     const { user } = useAuthContext();
 
     const LoggedInUser = ({
@@ -26,12 +29,12 @@ const Header = () => {
     const Guest = () => {
         return (
             <>
-            <li className="header-nav-li">
-                <Link to="/login" className="header-nav-link">Login</Link>
-            </li>
-            <li className="header-nav-li">
-                <Link to="/register" className="header-nav-link">Register</Link>
-            </li>
+                <li className="header-nav-li">
+                    <Link to="/login" className="header-nav-link">Login</Link>
+                </li>
+                <li className="header-nav-li">
+                    <Link to="/register" className="header-nav-link">Register</Link>
+                </li>
             </>
         );
     }
@@ -41,6 +44,24 @@ const Header = () => {
             <li className="header-nav-li">
                 <Link to="/add-category" className="header-nav-link">Add category</Link>
             </li>
+        );
+    }
+
+    const handleHaburgerMenu = () => {
+        if(haburgerMenu === '') {
+            setHamburgerMenu('open')
+        } else {
+            setHamburgerMenu('')
+        }
+    }
+
+    const HamburgerMenu = () => {
+        return (
+            <div onClick={handleHaburgerMenu} className={"hamburger-menu " + haburgerMenu}>
+                <span className="first"></span>
+                <span className="second"></span>
+                <span className="third"></span>
+            </div>
         );
     }
 
@@ -61,7 +82,7 @@ const Header = () => {
                     }
                 </ul>
             </nav>
-
+            <HamburgerMenu />
         </header>
     );
 }
