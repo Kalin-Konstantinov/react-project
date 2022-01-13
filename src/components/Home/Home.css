@@ -107,3 +107,15 @@
     cursor: pointer;
     background-color: #799eb7;
 }
+
+@media all and (max-width: 1200px) {
+    .content-container {
+        width: 95%;
+    }
+}
+
+@media all and (max-width: 650px) {
+    .gallery-container {
+        padding: 10px;
+    }
+}

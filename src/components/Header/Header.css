@@ -73,6 +73,7 @@
 }
 
 
+
 @media all and (max-width: 1200px) {
     .header-nav {
         display: none;
@@ -85,4 +86,5 @@
     .header {
         justify-content: flex-end;
     }
+  
 }
