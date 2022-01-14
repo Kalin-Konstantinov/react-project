@@ -66,3 +66,15 @@
 .recipe-details-author-buttons a:hover {
     background-color: var(--button-background-color-hover);
 }
+
+@media all and (max-width: 1200px) {
+    .recipes-container {
+        width: 95%;
+    }
+}
+
+@media all and (max-width:660px) {
+    .recipes-container {
+        padding: 10px;
+    }
+}
