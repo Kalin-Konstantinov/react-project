@@ -22,3 +22,20 @@
     border-radius: 15px;
 }
 
+@media all and (max-width: 1200px) {
+    .gallert-categories {
+        gap: 10px;
+        padding: 20px;
+    }
+}
+
+
+@media all and (max-width: 660px) {
+    .gallert-categories {
+        width: 95%;
+    }
+
+    .gallery-main {
+        padding: 0;
+    }
+}
