@@ -68,3 +68,33 @@
     background-color: var(--button-background-color-hover);
     cursor: pointer;
 }
+
+
+@media all and (max-width: 1200px) {
+    .create-page {
+        justify-content: center;
+    }
+
+    .create-form-wrapper {
+        margin: 0;
+    }
+}
+
+@media all and (max-width: 660px) {
+
+    .create-form-wrapper {
+        padding: 15px 15px;
+    }
+}
+
+@media all and (max-width: 400px) {
+
+    .create-form-wrapper {
+        padding: 10px;
+    }
+
+    .create-form-imput,
+    .create-form-textarea {
+        min-width: 250px;
+    }
+}
