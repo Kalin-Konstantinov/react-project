@@ -1,4 +1,4 @@
-.edit{
+.edit {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,11 +14,11 @@
     align-items: center;
     gap: 20px;
     background-color: var(--secondary-background-color);
-    padding: 0px 50px;
     border-radius: 25px;
     margin-left: 400px;
     padding: 40px;
 }
+
 .edit-title {
     font-weight: 600;
     font-size: 32px;
@@ -32,8 +32,8 @@
 }
 
 .edit-form-textarea {
-    width: 350px;
-    height: 100px;
+    min-width: 350px;
+    min-height: 100px;
     padding: 10px;
     border-radius: 10px;
 }
@@ -46,7 +46,7 @@
     padding: 10px;
 }
 
-.edit-form-input { 
+.edit-form-input {
     min-width: 350px;
     min-height: 50px;
     font-size: 20px;
@@ -68,31 +68,28 @@
     background-color: var(--button-background-color);
     border: none;
 }
+
 .edit-form-submit:hover {
     background-color: var(--button-background-color-hover);
     cursor: pointer;
 }
 
-
-/* .question {
-    margin: 0;
-    padding: 0;
-    font-weight: 600;
-    font-size: 26px;
+@media all and (max-width: 1200px) {
+    .edit-container {
+        margin: 0;
+    }
 }
 
-.login {
-    margin: 0;
-    padding: 0 0 50px 0;
+@media all and (max-width: 660px) {
+    .edit-container {
+        margin: 0;
+        padding: 10px;
+    }
 }
 
-.link {
-    font-weight: bold;
-    font-size: 24px;
-    text-decoration: none;
-    color: rgb(82, 82, 82);
+@media all and (max-width: 380px) {
+    .edit-form-input,
+    .edit-form-textarea {
+        min-width: 200px;
+    }
 }
-
-.link:hover {
-    text-decoration: underline;
-} */
