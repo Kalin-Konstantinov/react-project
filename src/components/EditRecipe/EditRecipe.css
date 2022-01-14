@@ -2,9 +2,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 95vh;
+    min-height: 95vh;
     background-image: var(--main-background-image);
     background-repeat: no-repeat;
+    padding: 20px 0;
 }
 
 
