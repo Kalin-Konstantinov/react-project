@@ -76,7 +76,7 @@
 
 @media all and (max-width: 1200px) {
     .edit-container {
-        margin: 0;
+        margin: 20px 0;
     }
 }
 
