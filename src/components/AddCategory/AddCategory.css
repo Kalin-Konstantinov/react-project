@@ -48,3 +48,11 @@
 .add-category-button:hover {
     background-color: var(--button-background-color-hover);
 }
+
+
+@media all and (max-width: 660px) {
+    .add-category-wrapper {
+    padding: 40px 0;
+    }
+
+}
