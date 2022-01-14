@@ -18,6 +18,7 @@
     border-radius: 25px;
     margin-right: 320px;
 }
+
 .login-title {
     font-weight: 600;
     font-size: 32px;
@@ -32,7 +33,7 @@
 
 
 
-.login-input { 
+.login-input {
     min-width: 300px;
     min-height: 50px;
     font-size: 24px;
@@ -81,4 +82,28 @@
 
 .login-to-register-link:hover {
     text-decoration: underline;
+}
+
+@media all and (max-width: 1200px) {
+    .login-wrapper {
+        justify-content: center;
+    }
+
+    .login {
+        margin: 0;
+    }
+}
+
+@media all and (max-width: 660px) {
+
+    .login {
+        padding: 15px 15px;
+    }
+}
+
+@media all and (max-width: 350px) {
+
+    .login {
+        padding: 15px 0;
+    }
 }
