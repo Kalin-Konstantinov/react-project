@@ -2,9 +2,10 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    height: 95vh;
+    min-height: 95vh;
     background-image: var(--main-background-image);
     background-repeat: no-repeat;
+    padding: 10px 0;
 }
 
 
@@ -82,4 +83,29 @@
 
 .login-link:hover {
     text-decoration: underline;
+}
+
+
+@media all and (max-width: 1200px) {
+    .register-wrapper{
+        justify-content: center;
+    }
+
+    .register {
+        margin: 0;
+    }
+}
+
+@media all and (max-width: 660px) {
+
+    .register {
+        padding: 15px 15px;
+    }
+}
+
+@media all and (max-width: 350px) {
+
+    .register {
+        padding: 15px 0;
+    }
 }
