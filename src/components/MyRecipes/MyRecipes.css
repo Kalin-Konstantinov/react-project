@@ -28,3 +28,16 @@
     min-height: 70vh;
 }
 
+
+@media all and (max-width: 1200px) {
+    .my-recipes-container {
+        width: 95%;
+    }
+}
+
+@media all and (max-width: 660px) {
+    .my-recipes-container {
+        padding: 10px;
+    }
+}
+
