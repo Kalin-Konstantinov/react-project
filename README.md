@@ -12,11 +12,11 @@ This is a front-end application that depends on the back-end API, the documentat
 
 ### Used technologies
 
-    -JavaScript;
-    -ReactJS;
-    -React Router DOM;
-    -HTML;
-    -CSS;
+    -JavaScript
+    -ReactJS
+    -React Router DOM
+    -HTML
+    -CSS
 
 ### Start the application
 
