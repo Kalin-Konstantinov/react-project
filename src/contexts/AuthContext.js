@@ -1,4 +1,6 @@
-import { useContext, createContext, useState } from 'react';
+import { useContext, createContext, useState, useEffect } from 'react';
+
+const USER_STRING = 'user';
 
 const AuthContext = createContext();
 
@@ -14,11 +16,28 @@ export const AuthContextProvider = ({
 }) => {
     const [state, setState] = useState(userInitialValue);
 
+    useEffect(() => {
+        const userData = localStorage.getItem(USER_STRING);
+        setState(JSON.parse(userData));
+    }, [])
+
+    const safeUserDataToLocalStorage = (data) => {
+        const jsonFormatData = JSON.stringify(data);
+        localStorage.setItem(USER_STRING, jsonFormatData);
+    }
+
+    const removeUserDataToLocalStorage = () => {
+        const jsonFormatData = JSON.stringify(userInitialValue);
+        localStorage.setItem(USER_STRING, jsonFormatData);
+    }
+
     const saveUserData = (userData = {}) => {
+        safeUserDataToLocalStorage(userData);
         setState(userData);
     }
 
     const deleteUserData = () => {
+        removeUserDataToLocalStorage();
         setState(userInitialValue);
     }
 
