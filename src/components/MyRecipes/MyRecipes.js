@@ -14,7 +14,6 @@ const MyRecipes = () => {
     useEffect(() => {
         getMyRecpies(user._id, user.accessToken)
             .then(recipes => {
-                console.log(recipes);
                 setMyRecipes(recipes);
             })
     }, [user._id, user.accessToken]);
