@@ -17,8 +17,9 @@ export const AuthContextProvider = ({
     const [state, setState] = useState(userInitialValue);
 
     useEffect(() => {
-        const userData = localStorage.getItem(USER_STRING);
-        setState(JSON.parse(userData));
+        const userDataString = localStorage.getItem(USER_STRING);
+        const userData = JSON.parse(userDataString) || userInitialValue;
+        setState(userData);
     }, [])
 
     const safeUserDataToLocalStorage = (data) => {
