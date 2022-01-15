@@ -20,7 +20,7 @@ export const AuthContextProvider = ({
         const userDataString = localStorage.getItem(USER_STRING);
         const userData = JSON.parse(userDataString) || userInitialValue;
         setState(userData);
-    }, [])
+    }, []);
 
     const safeUserDataToLocalStorage = (data) => {
         const jsonFormatData = JSON.stringify(data);
