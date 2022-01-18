@@ -22,7 +22,7 @@ const Recipes = () => {
             <section className="recipes-container">
                 {recipes.length > 0
                     ? recipes.map(x => <RecipeCard recipe={x} key={x._id} />)
-                    : `No recipes in category ${category} yet.`
+                    : 'Not found any recipes in this category.'
                 }
             </section>
         </section>
